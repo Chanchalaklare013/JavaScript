@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h4>Enter number</h4>
+    <input type="number" id="result">
+    <h4>Result</h4>
+    <input type="text" id="result">
+    <button onclick="even()">submit</button>
+    <script>
+function even()
+{
+    let num=document.getElementById("result").value;
+    if(num%2==0)
+    {
+        document.getElementById("result").value="  number is even"
+        // b.setAttribute("value","even")
+       // document.writeln(num+" is even number")
+
+    }
+    else
+    {
+        document.writeln(num+" is not even number")
+    }
+}
+    </script>
+</body>
+</html>
