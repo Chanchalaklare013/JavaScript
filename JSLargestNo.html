@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h4>Enter three numbers</h4>
+    <input type="number" id="input1">
+    <input type="number" id="input2">
+    <input type="number" id="input3">
+    <button onclick="largest()">submit</button>
+    <button id="result"></button>
+    <script>
+        function largest()
+        {
+            let num1=document.getElementById("input1").value;
+            let num2=document.getElementById("input2").value;
+            let num3=document.getElementById("input3").value;
+        if(num1>=num2&&num1>=num3)
+        {
+            //document.writeln(num1+" is largest number");
+            largestnum=num1;
+        }
+        else if(num2>=num1&&num2>=num3)
+        {
+           // document.writeln(num2+" is largest number");
+           largestnum=num2;
+
+        }
+        else//(num3>=num1||num3>=num2)
+        {
+            //document.writeln(num3+" is largest number");
+            largestnum=num3;
+        }
+        document.getElementById("result").innerHTML=largestnum+" is largest number";
+        }
+        largest();
+    </script>
+</body>
+</html>
