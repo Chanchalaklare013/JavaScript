@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h4>Enter a number </h4>
+    <input type="number" id="input">
+    <button onclick="evenNo()">submit</button>
+    <p id="result">result</p>
+    <script>
+        function evenNo()
+        {
+            let num=document.getElementById("input").value;
+            if(num%2==0)
+        {
+            document.writeln(num+" is even number")
+        }
+        else
+        {
+            document.writeln(num+" isn't even number")
+        }
+        }
+    </script>
+</body>
+</html>
