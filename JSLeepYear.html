@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Enter a year</h3>
+    <input type="text" id="input">
+    <button onclick="leapYear()">submit</button>
+    <p id="result">result</p>
+    <script>
+        function leapYear()
+        {
+            let year=document.getElementById("input").value;
+            if(year%4==0)
+        {
+           //console.log(year+" is leap year");
+           document.getElementById("result").innerHTML=year+" is leap year";
+        }
+        else
+        {
+            //console.log(year+" is not leap year");
+            document.getElementById("result").innerHTML=year+" is not leap year";
+        }
+        }
+       leapYear();  
+    </script>
+</body>
+</html>
