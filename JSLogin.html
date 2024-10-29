@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Enter username</h2>
+    <input type="text" id="input">
+    <h2>Enter password</h2>
+    <input type="text" id="password">
+    <button onclick="password()">submit</button>
+    <p id="password"></p>
+    <script>
+        function password()
+        {
+           let a=12345;
+           let password=document.getElementById("password").value;
+           if(password==a)
+           {
+            document.writeln("Login successfully");
+           }
+           else
+           {
+            document.writeln("better luck try next time")
+           }
+        }
+    </script>
+</body>
+</html>
