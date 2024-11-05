@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let s="ABCD";
+        //agar at() use karte h to end se print hoga and -ve indexing is allowed in this
+        console.log(s.at(-2));
+
+        //starting index value se print hoga
+        console.log(s.charAt(0));
+
+        //unicod return karega charecter ka jese
+        console.log(s.charCodeAt(0)) //65 if unicode of A
+
+        //convert into lowercase
+        console.log(s.toLowerCase())
+
+        //convert into upperCase
+        console.log(s.toUpperCase())
+
+        //add(concat) two or more strings
+        console.log(s.concat(" ","1234","@1","xyz"))
+
+        //to break string
+        console.log(s.slice(2,3));
+
+        //jo index no. denge unke biche ke charecter print honge
+        console.log(s.substring(-1,2));
+
+        // jha se start hoga vo  charecters nhi dega uske aaage ke charecters dega 
+        console.log(s.substr(1,3))
+
+        //remove space from the string in starting and end script
+        console.log(s.trim())
+
+        //repeate the charecters
+        console.log(s.padStart(8,"abc"))
+
+        //
+        console.log(s.padEnd("m",8))
+
+    </script>
+</body>
+</html>
