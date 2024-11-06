@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h5>Enter two string</h5>
+    <input type="text" id="str1" placeholder="Enter first string"/>
+    <br><br>
+    <input type="text" id="str2" placeholder="Enter second string"/>
+    <br><br>
+    <button id="btn1" onclick="add()">concat</button>
+     &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+    <input id="btn1input">
+    <br><br>
+    <button id="btn2" onclick="lcase()">Lowercase</button>
+    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+    <input id="btn2input">
+    <br><br><br>
+    <button id="btn3" onclick="ucase()">uppercase</button>
+    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+    <input id="btn3input">
+    <br><br><br>
+    <button id="btn4" onclick="padding()">padding</button>
+    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+    <input id="btn4input">
+    
+    <script>
+         //let a=document.getElementById("str1").value;
+         //let b=dcument.getElementById("str2").value;
+        function add()
+        {
+            let a=document.getElementById("str1").value;
+            let b=document.getElementById("str2").value;
+            let c=a.concat(...b)
+            document.getElementById("btn1input").value=c
+            //return document.getElementById("result")
+        }
+        
+        function lcase()
+        {
+            let a=document.getElementById("str1").value;
+            let b=document.getElementById("str2").value;
+            let c=a.toLowerCase()
+            document.getElementById("btn2input").value=c;
+        }
+
+        function ucase(){
+            let a=document.getElementById("str1").value;
+        let b=document.getElementById("str2").value;
+    
+            // let d=a.toUpperCase()
+            // let d=a.toUpperCase()
+            document.getElementById("btn3input").value=a.toUpperCase()
+        }
+
+        function padding()
+        {
+            let a=document.getElementById("str1").value;
+            let b=document.getElementById("str2").value;
+    
+            let c=a.padStart(67,"chanchal")
+            document.getElementById("btn4input").value=c
+        }
+
+
+
+
+
+
+    </script>
+</body>
+</html>
