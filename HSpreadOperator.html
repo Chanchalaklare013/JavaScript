@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function f1(...a)
+        {
+            document.write("F1 called.. and executed...");
+        }
+        function f2(a,b,c, ...d)
+        {
+            document.write("<br> a:"+a);
+            document.write("<br> b:"+b);
+            document.write("<br> c:"+c);
+            document.write("<br> d:"+d);
+         document.write("<br> d:"+d[0]);
+        }
+            
+        f1(25,56,67);
+        f2(10,20,30,40,50,60,70,80);
+    </script>
+</body>
+</html>
