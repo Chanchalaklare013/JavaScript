@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let ar1=[1,2,3,4,5];
+        let ar2=[6,7,8,9,10];
+        let ar3=[ar1.length+ar2.length];
+        let a=ar1.length;
+        for(let i=0;i<ar1.length;i++)
+    {
+        ar3[i]=ar1[i];
+    }
+    for(let i=0;i<ar2.length;i++)
+    {
+        ar3[a]=ar2[i];
+        a++;
+    }
+        console.log(ar3);
+    </script>
+</body>
+</html>
