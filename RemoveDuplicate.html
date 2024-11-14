@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //remove duplicate value in array
+        let ar=[10,20,20,40,40,50,20,10];
+        newer=[]
+        let x=0;
+        for(let i=0;i<ar.length;i++)
+       {
+        let count=0;
+        for(let j=i+1;j<ar.length;j++)
+        {
+            if(ar[i]==ar[j])
+        {
+            count++;
+            //console.log(ar[i]);
+        }
+        }
+        if(count>0)
+        {
+
+        }
+        else{
+            newer[x]=ar[i];
+            x++;
+        }
+       }
+       console.log(newer)
+       
+ 
+    </script>
+</body>
+</html>
